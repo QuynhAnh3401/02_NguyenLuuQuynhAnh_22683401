@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input" type="text"> 
+    <button id="btncheck">click the button</button>
+    <span id="output"></span>
+    <script>
+        var input = document.getElementById('input');
+        var btncheck = document.getElementById('btncheck');
+        var output = document.getElementById('output');
+
+        var pt = /\d+$/;
+
+        btncheck.onclick = () =>{
+            var logic = pt.test(input.valua);
+            console.log(logic);
+            output.innerHTML = logic;
+        }
+
+    </script>
+    
+
+</body>
+</html>
