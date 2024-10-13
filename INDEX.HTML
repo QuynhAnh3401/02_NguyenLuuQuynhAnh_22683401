@@ -14,10 +14,10 @@
         var btncheck = document.getElementById('btncheck');
         var output = document.getElementById('output');
 
-        var pt = /\d+$/;
+        var pt = /^\d{3}$/;
 
         btncheck.onclick = () =>{
-            var logic = pt.test(input.valua);
+            var logic = pt.test(input.value);
             console.log(logic);
             output.innerHTML = logic;
         }
